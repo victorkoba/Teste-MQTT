@@ -6,9 +6,6 @@ broker = "broker.hivemq.com"
 port = 1883
 topic = "senai/dev"
 
-# Unidade Curricular - Redes IoT
-# Aula 1: MQTT - Prof. Wesley Fioreze
-
 def on_message(client, userdata, msg):
     print(f"Mensagem recebida no tópico '{msg.topic}': {msg.payload.decode()}")
 
